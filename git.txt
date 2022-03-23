@@ -1,0 +1,27 @@
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+ssh-keygen -t rsa -C "your_email@youremail.com"
+
+git init
+git add .   # 点是加所有，也可以指定文件名，点用的多
+git commit -am "comment"
+git push
+
+git rm filename
+
+
+git status # 查看本地文件提交状态
+
+
+git remote -v  # 查看远程分支
+
+
+！！！如果本地还未提交，先提交再pull
+cd pruning
+git pull origin master     # 拉取远程分支，并与本地合并
+
+git mv file file # 重命名
+
+
+git ls-files # 查看git管理的文件
